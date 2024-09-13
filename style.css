@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Quicksand", sans-serif;
+}
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    position: fixed;
+    align-items:center;
+    background-color: rgba(111, 154, 111, 0.43);
+}
+nav{
+    display: flex;
+    align-items: center;
+    width:100%;
+}
+nav a{
+    text-decoration: none;
+    padding: 10px;
+    color:white;
+    margin-left:50px;
+    font-size: 1.2em;
+    font-weight: 500;
+    transition: 0.7s ease;
+    
+}
+.logo{
+    text-decoration: none;
+    color:rgb(174, 110, 120);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2em;
+    width:100%;
+    padding:10px;
+    margin-left:50px;
+}
+nav a:hover{
+    color:rgb(174, 110, 120);
+    border-bottom: 2px solid rgb(174, 110, 120) ;
+}
+section{
+    padding: 100px 200px;
+}
+.content{
+    
+   height:75%;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    background-image: url(images-restaurant/back-ground\ ing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+   
+   
+}
+.content h1{
+    margin-top:200px;
+    color:#fff;
+    font-size:2em;
+    font-weight:700;
+}
+.primary-text{
+    color:rgb(174, 110, 120) ;
+    margin:20px;
+}
+.content p{
+    margin:20px 0 40px;
+    color:#fff;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.btn{
+    display:inline-block;
+    text-decoration: none;
+    padding:15px 30px;
+    border:none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color:#fff;
+    border:1px solid #fff;
+    transition: 0.7s ease;
+}
+.btn-primary:hover{
+    background-color: rgb(174, 110, 120);
+    color:#fff;
+    border:1px solid #fff;
+    transform: scale(1.1);
+}
+.title{
+    text-align:center;
+    margin-bottom: 4rem;
+}
+.title h2{
+    color:rgb(174, 110, 120);
+    font-size: 2em;
+    font-weight: 700;
+    margin:20px;
+
+}
+.about{
+    display: flex;
+    justify-content: space-between  ;
+}
+.about p {
+    margin:30px;
+    display: flex;
+   
+}
+
+.about-content{
+    
+    display: flex;
+    justify-content: space-between;
+
+}
+.title p{
+       color:black;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+}
+
+
+
+.more-details{
+    text-decoration: none;
+    border:1px solid white;
+    margin:20px;
+
+    background-color: rgb(79, 72, 72);
+    color:white;
+    border-radius: 15px;
+    margin-left:200px;
+    transition: 0.7s ease;
+}
+.more-details:hover{
+    background-color: rgb(174, 110, 120);
+transform: scale(1.2);
+
+}
+.about-content img{
+    width: 350px;
+
+}
+.about-content p{
+    margin-right: 7rem;
+    color:#9a9a9a;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+#offers{
+    
+    display:flex;
+    justify-content: center;
+    background: url(images-restaurant/offer-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: color;
+}
+#offers .title{
+    text-align: center;
+    margin-bottom:4rem;
+}
+.offers-items{
+    display:flex;
+    justify-content: center;
+
+}
+#offers .title p{
+    color:#fff;
+    font-weight: 500;
+    align-items: center;
+    text-align: center;
+}
+#offers .offers-items img{
+    width:400px;
+    height:300px;
+}
+.card-item{
+    margin:20px;
+    text-align: center;
+    color:#fff;
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin:15px 0;
+
+}
+.offer-content span{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+#menu{
+    background-color: #fff;
+    padding:5rem 0;
+    align-items: center;
+
+}
+#menu .title{
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.menu-items{
+    display:flex;
+    justify-content:space-around;
+    
+}
+.menu-card{
+    display:flex;
+    justify-content: space-around;
+}
+#menu .menu-items .menu-img img{
+    border-radius: 50%;
+    padding:20px;
+    margin-right: 40 px;
+}
+.menu-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+}
+.menu-card-content h3{
+    font-weight: 600;
+    border-bottom: 1px dashed #c2bdbd;
+    padding:10px;
+    margin:10px;
+    
+}
+.menu-card-content p{
+    width: 200px;
+    min-height: 100px;
+}
+.menu-card-content span{
+    margin-left: 50px;
+    
+}
+#menu .btn {
+    background-color:rgb(79, 72, 72);
+    color:white;
+    display: block;
+    margin:auto;
+    width:200px;
+    height:50px;
+    text-align:center;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+#menu .btn:hover{
+    transform: scale(1.1);
+    background-color: rgb(174, 110, 120);
+}
+#daytime{
+    background: url(images-restaurant/daytime\ bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+    color:white;
+    height:80vh;
+
+}
+#daytime h2{
+    margin:auto;
+    display:block;
+    padding:50px;
+    margin-left:380px;
+    font-size: 4em;
+    font-weight: 800;
+}
+#daytime .daytime-items{
+    display: flex;
+    justify-content: center;
+
+}
+#daytime .daytime-items .daytime-item{
+    margin:20px 50px;
+
+}
+#daytime .daytime-items .daytime-item h3{
+    font-size:32px;
+    margin:15px ;
+    text-align: center;
+    font-weight: 700;
+
+}
+#daytime .daytime-items .daytime-item p{
+    text-align: center;
+    font-weight: 500;
+}
+#daytime .daytime-items .daytime-item img{
+    margin:15px;
+}
+container{
+    max-width:900px;
+}
+#contact{
+    padding:5rem 0;
+}
+#contact .contact-content  h3{
+    margin:15px;
+    font-size: 2em;
+    font-weight: 400;
+    color:#383848;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+}
+#contact  h2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin:30px 0;
+    font-size: 2.5em;
+    font-weight: 600;
+    color:#383848;
+}
+#contact .contact-content p{
+    margin:15px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+#contact .contact-content .contact-info{
+    width:50%;
+}
+#contact .contact-content .contact-info i{
+    margin:0 10px;
+    font-size:1.2em;
+    
+    color:rgb(174, 110, 120);
+    
+}
+#contact .contact-content .contact-info .social-media a {
+    text-decoration: none;
+    
+}
+#contact .contact-content .contact-info .social-media a  i{
+    color:#fff;
+    background-color: #383848;
+    padding:10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    font-size: 15px;
+    transition: 0.7s ease;
+}
+#contact .contact-content .contact-info .social-media a i:hover{
+    background-color: rgb(174, 110, 120);
+    transform: scale(1.1);
+}
+form{
+    width:50%;
+
+}
+form input,
+form textarea{
+    display:block;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    background-color: #e3e2dd;
+}
+form .btn{
+    color:black;
+    transition: 0.7s ease;
+    
+}
+form .btn:hover{
+    background-color: rgb(174, 110, 120);
+    transform: scale(1.1);
+}
+#footer {
+    text-align: center;
+    color:#fff;
+    padding:10px 0;
+    background-color: rgb(174, 110, 120);
+
+}
+#footer a{
+    text-decoration: none;
+    color:#fff  x;
+    font-size: 20px;
+    font-weight: 500;
+    transition:0.7s ease; 
+
+}
+#footer a:hover{
+    transform: scale(1.1);
+    color:rgb(14, 13, 13);
+}
+
+
+
+
+
